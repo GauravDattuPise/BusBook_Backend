@@ -9,6 +9,8 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+// mongoose.set("strictQuery" , false)
+
 mongoose.connect("mongodb+srv://prashantpkc123:Prashant123@prashant.2lyameg.mongodb.net/signup-login")
 .then( ()=> console.log("DB is connected"))
 .catch(

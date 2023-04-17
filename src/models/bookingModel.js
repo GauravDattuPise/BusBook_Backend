@@ -16,16 +16,17 @@ const bookingSchema = new mongoose.Schema({
     numberOfSeats: {
     type: Number,
     required: true,
-  },
-  
+  },  
   date: {
-    type: Date,
+    type: String,
     required: true,
   },
-
   bookingDate : {
-    type: Date,
+    type: String,
     required: true
+  },
+  totalPrice : {
+    type : Number
   }
 }, { timestamps: true });
 

@@ -18,6 +18,12 @@ const BusSchema = new Schema({
     destination: {
         type: String
     },
+    DepartureTime : {
+        type : String
+    },
+    ArrivalTime : {
+        type : String
+    },
     totalSeats: {
         type: String
     },
@@ -28,7 +34,7 @@ const BusSchema = new Schema({
         type: String
     },
     availableDates: {
-        type: Date
+        type: String
       }
 }, {timestamps: true})
 
